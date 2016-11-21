@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    background-image: url("https://www.caspio.com/wp-content/uploads/2015/04/Localization_1920.jpg");
+}
+p.ex1 {
+    padding:1cm;
+}
+
+p.ex2 {
+    padding: 0.5cm 3cm;
+}
+p.ex3{
+padding:.5cm
+}
+fieldset { 
+border:2cm green;
+ }
+
+legend {
+  <!--padding: 0.2em 0.5em;-->
+  border:2cm green;
+  <!--color:green;-->
+  font-size:100%;
+  text-align:center;
+  }
+<script type="text/javascript" src="countryStateCity.js"></script>
+</style>
+</head>
+<body>
+<center>
+<div class="container-fluid bg-1 text-center">
+  <center><font size="8>"<h3 class="margin">LOCATION BASED SERVICES </h3></font><center>
+</div>
+<!--<img src="https://www.caspio.com/wp-content/uploads/2015/04/Localization_1920.jpg" class="img-circle" alt="Localization_1920" width ="900" height="750" >
+  
+<p class="ex2"></p>-->
+<p class="ex1"></p>
+
+<fieldset style="width:500px; color:blue"
+<legend align= "center"><strong><font size="5"> Make your selection..!!!</font></strong></legend>
+<p class="ex3"></p>
+<form name="test" method="POST" action="submit.html">
+<center>
+<table>
+<tr>
+<td style="text-align: center;">Country:</td>
+<td style="text-align: left ;">
+<select name="country" id="country" onchange="setStates();">
+  <option value="India">India</option>
+  <option value="Mexico">Mexico</option>
+  <option value="United States">United States</option>
+  <option value="Austria">Austria</option>
+</select>
+</td>
+</tr><tr>
+<td style="text-align: left;">State:</td>
+<td style="text-align: left;">
+<select name="state" id="state" onchange="setCities();">
+  <option value="">Please select a Country</option>
+</select>
+</td>
+</tr>
+<tr>
+<td style="text-align: left;">City:</td>
+<td style="text-align: left;">
+<select name="city"  id="city">
+  <option value="">Please select a Country</option>
+</select>
+</td>
+</tr>
+</table>
+</center>
+<p class="ex2"></p>
+<button type="submit" value="Submit">Submit</button>
+</fieldset>
+</form>
+</div>
+<center>
+</body>
+</html>
